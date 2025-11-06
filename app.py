@@ -3,7 +3,7 @@ import streamlit as st
 import requests
 from core.interview import generar_pregunta
 
-API_URL = "http://127.0.0.1:8001/evaluate"
+API_URL = "https://isa-evaluator.onrender.com/evaluate"
 
 st.set_page_config(
     page_title="ISA - Intelligent Screening Assistant",
