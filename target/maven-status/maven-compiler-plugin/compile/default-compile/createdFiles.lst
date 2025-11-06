@@ -1,0 +1,6 @@
+com\isa\model\EvalResult.class
+com\isa\controller\EvalController.class
+com\isa\scheduler\SchedulerService.class
+com\isa\model\EvalRequest.class
+com\isa\Main.class
+com\isa\service\EvaluadorService.class
