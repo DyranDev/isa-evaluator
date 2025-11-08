@@ -4,5 +4,7 @@ requests
 pydantic
 httpx
 streamlit
+bcrypt
+
 
 

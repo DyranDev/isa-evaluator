@@ -1,6 +1,6 @@
-F:\ISA-java-Threads\src\main\java\com\isa\model\EvalResult.java
-F:\ISA-java-Threads\src\main\java\com\isa\schedulerService\SchedulerService.java
-F:\ISA-java-Threads\src\main\java\com\isa\model\EvalRequest.java
-F:\ISA-java-Threads\src\main\java\com\isa\controller\EvalController.java
-F:\ISA-java-Threads\src\main\java\com\isa\Main.java
-F:\ISA-java-Threads\src\main\java\com\isa\service\EvaluadorService.java
+F:\isa\ISA-evaluator\src\main\java\com\isa\model\EvalRequest.java
+F:\isa\ISA-evaluator\src\main\java\com\isa\service\EvaluadorService.java
+F:\isa\ISA-evaluator\src\main\java\com\isa\controller\EvalController.java
+F:\isa\ISA-evaluator\src\main\java\com\isa\model\EvalResult.java
+F:\isa\ISA-evaluator\src\main\java\com\isa\Main.java
+F:\isa\ISA-evaluator\src\main\java\com\isa\schedulerService\SchedulerService.java

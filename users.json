@@ -1,0 +1,17 @@
+{
+    "dd": {
+        "password": "$2b$12$.9oxQtvzJv.BUyzbPNgv9u9IBOm3EUa6riHUEz8.Sx3eD0dJuv6v6",
+        "role": "candidato",
+        "created_at": "2025-11-06T16:25:07.525462"
+    },
+    "starink": {
+        "password": "$2b$12$mjySChxNB0UaYWQr6f3NEeAcu3.4ptaJsMZFXcV60tS9iCJrsBYha",
+        "role": "empresa",
+        "created_at": "2025-11-06T16:26:55.715597"
+    },
+    "Daniela": {
+        "password": "$2b$12$qULxCvM4AgZfVn.YdomZYOOb.JNQJiltkVxeVf4KwXfQJHOml3Aka",
+        "role": "empresa",
+        "created_at": "2025-11-06T16:42:25.383685"
+    }
+}

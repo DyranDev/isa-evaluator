@@ -2,8 +2,10 @@
 import streamlit as st
 import requests
 from core.interview import generar_pregunta
+from core.auth import register_user, login_user, verify_token
 
-API_URL = "https://isa-evaluator.onrender.com/evaluate"
+
+API_URL = "https://formidable-crucial-coleen.ngrok-free.dev/evaluate"
 
 
 
@@ -14,6 +16,38 @@ st.set_page_config(
 )
 
 st.title("🤖 ISA - *Inteligencia para la Selección de Aspirantes*")
+
+
+if "auth_token" not in st.session_state:
+    st.session_state.auth_token = None
+
+if not st.session_state.auth_token:
+    st.title("🔐 Autenticación ISA")
+    option = st.radio("Selecciona una opción", ["Iniciar sesión", "Registrarse"])
+
+    username = st.text_input("Usuario")
+    password = st.text_input("Contraseña", type="password")
+
+    if option == "Registrarse":
+        role = st.selectbox("Rol", ["empresa", "candidato"])
+        if st.button("Crear cuenta"):
+            result = register_user(username, password, role)
+            if result["status"] == "success":
+                st.success(result["message"])
+            else:
+                st.error(result["message"])
+
+    else:
+        if st.button("Iniciar sesión"):
+            result = login_user(username, password)
+            if result["status"] == "success":
+                st.session_state.auth_token = result["token"]
+                st.session_state.rol = result["role"]
+                st.rerun()
+            else:
+                st.error(result["message"])
+    st.stop()
+
 
 # ---- Selección de rol ----
 if "rol" not in st.session_state:
@@ -111,6 +145,11 @@ if st.session_state.rol == "empresa":
     if st.button("⬅️ Volver al menú principal", key="volver_empresa"):
         st.session_state.rol = None
         st.rerun()
+
+    if st.button("🚪 Cerrar sesión"):
+        st.session_state.clear()
+        st.rerun()  
+
 
 # =============================
 #        VISTA CANDIDATO
@@ -264,3 +303,8 @@ elif st.session_state.rol == "candidato":
             if key in st.session_state:
                 del st.session_state[key]
         st.rerun()
+
+    if st.button("🚪 Cerrar sesión"):
+        st.session_state.clear()
+        st.rerun()
+
