@@ -1,4 +1,4 @@
-# 🤖 ISA - Inteligencia para la Selección de Aspirantes
+# ISA - Inteligencia para la Selección de Aspirantes
 
 **Autor:** Dylan Vargas  
 **Versión:** 1.0  
@@ -9,7 +9,7 @@
 
 ---
 
-## 🧠 Descripción del Proyecto
+##  Descripción del Proyecto
 
 ISA (Inteligencia para la Selección de Aspirantes) es una plataforma inteligente de evaluación de candidatos, diseñada para asistir a empresas durante procesos de selección de personal.  
 El sistema permite realizar **entrevistas automáticas**, analizar respuestas con **inteligencia artificial**, y generar un **puntaje global** por competencias.
@@ -20,7 +20,7 @@ ISA cuenta con dos vistas principales:
 
 ---
 
-## 🧩 Arquitectura General
+##  Arquitectura General
 
 ISA está compuesto por tres módulos principales:
 
@@ -34,7 +34,7 @@ También incluye una versión Java experimental con hilos (`ISA-java-Threads`) p
 
 ---
 
-## ⚙️ Funcionalidades Principales
+##  Funcionalidades Principales
 
 - 🔐 **Autenticación local** con cifrado de contraseñas (bcrypt) y JWT.
 - 🧩 **Evaluación automática** de respuestas con IA.
